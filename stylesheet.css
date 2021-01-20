@@ -1,0 +1,105 @@
+body {
+    background-image: url("Background.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-family: sans-serif, arial, helvetica;
+
+}
+
+nav {
+    margin: 0%;
+    overflow:hidden;
+
+}
+
+header{
+    padding-left: 5%;
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15%;
+}
+
+html, body {
+    margin:0px;
+
+}
+
+main{
+    background-color: rgb(29, 29, 29);
+    background-size: 100%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 100%;
+   
+}
+
+.profpic {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-right: 7%;
+}
+.menu {
+    list-style-type: none;
+    text-align: right;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+}
+.menu li {
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+    margin: 2%;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.whiteloggo {
+    width: 12%;
+    height: auto;
+    float: left;
+    position: relative;
+    margin-left: 3%;
+}
+
+#loggoli {
+    background-color:  #3b3b3b ;
+    border: none;
+}
+
+.hand{
+    width: 5%;
+    height: auto;
+    margin-top: 3%;
+}
+
+.present {
+    line-height: 150%;
+}
+
+.logoprojects {
+    margin-top: 10%;
+}
+
+.logos {  
+   margin-top: 5%;
+}
+
+.logos img {
+  width: 15%;
+  height: auto;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+.otherstuff {
+    margin-top: 10%;
+    width: 50%;
+}

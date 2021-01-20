@@ -1,0 +1,23 @@
+h1,h2,p {
+    color: honeydew;
+}
+
+h1,h2 {
+    font-family: sans-serif, arial;
+}
+
+h1{
+    font-size:4vw;
+}
+
+h2 {
+    font-size:2.5vw;
+    letter-spacing: 0.2vw;
+}
+
+p {
+    font-size: 1.5vw;
+    color: rgb(165, 165, 165);
+    line-height: 3vw;
+}
+
