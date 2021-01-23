@@ -18,6 +18,12 @@ h2 {
 p {
     font-size: 1.5vw;
     color: rgb(165, 165, 165);
-    line-height: 3vw;
+    line-height: 4vw;
+}
+
+footer p {
+    font-size: 1vw;
+    line-height: 1.3vw;
+    color: rgb(46, 46, 46);
 }
 

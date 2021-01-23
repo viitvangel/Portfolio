@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    
+    $(function() {
+        $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        });
+    });
+    </script>
+    <script>
+      history.scrollRestoration = "manual"
+      </script>
+
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -16,7 +37,7 @@
 
     <ul class="menu">
       <li><a href="#">MY CV</a></li>
-      <li><a href="#">FIND ME</a></li>
+      <li><a href="#findme">FIND ME</a></li>
       <li><a href="#">CONTACTS</a></li>
     </ul>
   </nav>
@@ -58,8 +79,43 @@
 <div class="otherstuff">
    <h2>OTHER STUFF</h2>
 </div>
+<!--
+<div class="other">
+     <a href="other1.png" data-lightbox="mygallery"><img src="other1.png"></a>
+     <a href="other2.png" data-lightbox="mygallery"><img src="other2.png"></a>
+     <a href="other3.png" data-lightbox="mygallery"><img src="other3.png"></a>
+     <a href="other4.png" data-lightbox="mygallery"><img src="other4.png"></a>
+     <a href="other5.png" data-lightbox="mygallery"><img src="other5.png"></a>
+     <a href="other6.png" data-lightbox="mygallery"><img src="other6.png"></a>
+</div> -->
+
+<div class="other">
+   <a href="https://www.behance.net/gallery/111812425/Personal-logo-design"> <img src="other1.png"> </a>
+   <a href="https://www.behance.net/gallery/111813293/Auto-Place-billboard"> <img src="other2.png"> </a>
+   <a href="https://www.behance.net/gallery/111813489/Alliance-book-cover"> <img src="other4.png"> </a>
+   <a href="https://www.behance.net/gallery/111813415/Auto-Place-Cover-and-Heropage"> <img src="other3.png"> </a>
+   <a href="https://www.behance.net/gallery/111813661/Lake-Food-menu"> <img src="other5.png"> </a>
+  
+</div>
 
 </main>
     
+<footer id="findme">
+  <div class="findme">
+    <ul class="findme2">
+      <li><a href="https://www.facebook.com/profile.php?id=100000722399190">FACEBOOK</a></li>
+      <li><a href="https://www.behance.net/viitvangel1eeb">BEHANCE</a></li>
+      <li><a href="https://www.linkedin.com/in/vangel-tuparov-260315187/">LINKED IN</a></li>
+    </ul>
+  </div>
+  <div class="copyright">
+    <p>Copyright© 2020 Vangel Tuparov</p>
+    <p>Filling some space in the footer</p>
+  </div>
+  <div class="built">
+    <p> This site is built by me from home </p>
+  </div>
+</footer>
+
 </body>
 </html>
